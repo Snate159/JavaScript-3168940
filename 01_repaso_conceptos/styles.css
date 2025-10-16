@@ -1,0 +1,52 @@
+body {
+  background-color: #e393d3;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+img {
+  width: 400px;
+  transition: all 0.6s ease;
+  border-radius: 10px;
+}
+
+.botones {
+  margin-top: 20px;
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px 25px;
+  background-color: #eac95e;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ec0d0d;
+  transform: scale(1.05);
+}
+
+/* Efecto Blanco y Negro */
+.grayscale {
+  filter: grayscale(100%);
+  transition: filter 0.6s ease;
+}
+
+/* Efecto Desenfocar */
+.blur {
+  filter: blur(4px);
+  transition: filter 0.6s ease;
+}
+
+/* Efecto Zoom y Rotar */
+.zoom-rotate {
+  transform: scale(1.2) rotate(15deg);
+  transition: transform 0.6s ease;
+}
