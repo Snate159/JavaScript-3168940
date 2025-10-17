@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escenario interactivo</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="escenario">
+  <div class="escenario">
+    <!-- Elementos animables -->
+    <img src="Yoshi.png" class="yoshi" alt="Yoshi animado">
+    <img src="Cosito.png" class="cosito" alt="Cosito animado">
 
-        <img src="Yoshi.png" alt="cosito volando">
+    <!-- Elementos clickeables -->
+    <img src="Monedita.png" class="moneda1" alt="Moneda 1">
+    <img src="Monedita.png" class="moneda2" alt="Moneda 2">
+    <img src="Monedita.png" class="moneda3" alt="Moneda 3">
+    <img src="estrellita.png" class="estrella" alt="Estrella coleccionable">
+
+    <!-- Marcador -->
+    <div class="contador">
+      <div class="item-contador">
+        <img src="Monedita.png" alt="Moneda" class="icono">
+        <span id="contador-monedas">0</span>
+      </div>
+
+      <div class="item-contador">
+        <img src="estrellita.png" alt="Estrella" class="icono">
+        <span id="contador-estrellas">0</span>
+      </div>
     </div>
-
-
+  </div>
 
   <script src="./app.js"></script>
 </body>
+
 </html>
