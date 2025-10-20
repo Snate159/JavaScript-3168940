@@ -106,3 +106,39 @@ body {
   height: 25px;
   object-fit: contain;
 }
+
+.saltar{
+  animation: salto 0.6s ease forwards;
+}
+
+@keyframes salto {
+  0%{transform: translateY(0); opacity: 1;}
+  30%{transform: translateY(-60%);}
+  100%{transform: translateY(0); opacity: 0;}
+}
+
+.moverYoshi{
+  animation: moverYoshi 2s linear infinite alternate;
+}
+
+@keyframes moverYoshi {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-40px);
+  }
+}
+
+.moverCosito{
+  animation: moverCosito 2s linear infinite alternate;
+}
+
+@keyframes moverCosito {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-40px);
+  }
+}
