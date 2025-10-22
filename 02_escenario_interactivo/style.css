@@ -142,3 +142,35 @@ body {
     transform: translateX(-40px);
   }
 }
+
+
+
+.escenario2 {
+  position: relative;
+  width: 750px;
+  height: 500px;
+  margin: 30px auto;
+  background-image: url('bosque.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border: 4px solid #000;
+  border-radius: 10px;
+}
+
+
+
+
+
+.escenario3 {
+  position: relative;
+  width: 750px;
+  height: 500px;
+  margin: 30px auto;
+  background-image: url('silencion\ gil.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border: 4px solid #000;
+  border-radius: 10px;
+}
