@@ -14,7 +14,7 @@
         })
     })
 
-    aumentos.forEach(item => {
+    aumentos2.forEach(item => {
 
         item.addEventListener("click", () => {
             item.style.filter = "grayscale(1)"
