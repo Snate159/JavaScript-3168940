@@ -145,6 +145,9 @@ body {
 
 
 
+
+
+
 .escenario2 {
   position: relative;
   width: 750px;
@@ -157,6 +160,111 @@ body {
   border: 4px solid #000;
   border-radius: 10px;
 }
+
+.nota1 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 200px;
+  left: 200px;
+}
+
+.nota2 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 120px;
+  left: 350px;
+}
+
+.nota3 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 280px;
+  left: 500px;
+}
+
+.nota4 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 70px;
+  right: 150px;
+}
+
+.slenderman {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 50px;
+  left: 50px;
+}
+
+.jeff {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  right: 80px;
+}
+
+.contador2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 15px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.icono2 {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+
+.moverSlender{
+  animation: moverSlender 2s linear infinite alternate;
+}
+
+@keyframes moverSlender {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-40px);
+  }
+}
+
+.moverJeff{
+  animation: moverJeff 2s linear infinite alternate;
+}
+
+@keyframes moverJeff {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-40px);
+  }
+}
+
+
+
+
+
+
 
 
 
