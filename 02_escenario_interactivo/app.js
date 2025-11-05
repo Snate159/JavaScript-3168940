@@ -2,8 +2,11 @@
     const aumentos2 = document.querySelectorAll(".estrella")
     const tablero = document.querySelector("#contador-monedas")
     const tablero2 = document.querySelector("#contador-estrellas")
+    const sonidoMoneda = document.getElementById("snMoneda")
+    const sonidoEstrella = document.getElementById("snEstrella")
     let counter = 0
     let counter2 = 0
+
 
     aumentos.forEach(item => {
 
@@ -12,6 +15,7 @@
             item.classList.add("saltar")
             counter++
             tablero.textContent = counter
+            sonidoMoneda.play()
         })
     })
 
@@ -22,6 +26,7 @@
             item.classList.add("saltar")
             counter2++
             tablero2.textContent = counter2
+            sonidoEstrella.play()
         })
         
     })
@@ -29,6 +34,7 @@
 
     const notas = document.querySelectorAll(".notas")
     const tablero3 = document.querySelector("#contador-notas")
+    const sonidoEstatica = document.getElementById("snEstatica")
     let total = 0
 
     notas.forEach(item => {
@@ -38,12 +44,14 @@
             item.classList.add("saltar")
             total++
             tablero3.textContent = total
+            sonidoEstatica.play()
         })
     })
 
 
     const circulo = document.querySelectorAll(".circulo")
     const tablero4 = document.querySelector("#contador-circulos")
+    const sonidoRadio = document.getElementById("snRadio")
     let total2 = 0
 
     circulo.forEach(item => {
@@ -53,6 +61,7 @@
             item.classList.add("saltar")
             total2++
             tablero4.textContent = total2
+            sonidoRadio.play()
         })
     })
 
@@ -134,3 +143,4 @@ miniaturas.forEach(function (miniatura, i) {
 })
 
 mostrarEscena(0)
+
