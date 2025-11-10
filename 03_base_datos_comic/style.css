@@ -1,0 +1,318 @@
+/* ==============================
+   ESTILOS INSPIRADOS EN CRUNCHYROLL
+   ============================== */
+
+:root {
+  --color-bg: #0f0f0f;
+  --color-card: #1a1a1a;
+  --color-accent: #f47521;
+  --color-text: #ffffff;
+  --color-gray: #b3b3b3;
+  --font-main: 'Poppins', sans-serif;
+}
+
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.5;
+}
+
+/* ==============================
+   ENCABEZADO / NAV
+   ============================== */
+header {
+  background-color: #141414;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo h1 {
+  color: var(--color-accent);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--color-accent);
+}
+
+/* Buscador y botones */
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-bar input {
+  background-color: #222;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.7rem;
+  color: var(--color-text);
+}
+
+.user-actions a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ==============================
+   HERO / BANNER PRINCIPAL
+   ============================== */
+.hero {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+              url("https://images7.alphacoders.com/132/1328232.png") center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem 2rem;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: var(--color-text);
+}
+
+.hero p {
+  color: var(--color-gray);
+  margin: 0.5rem 0 1.5rem;
+}
+
+.hero button {
+  background-color: var(--color-accent);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #ff8730;
+}
+
+/* ==============================
+   SECCIONES DE CONTENIDO
+   ============================== */
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+/* Grillas */
+.episode-grid,
+.series-grid,
+.continue-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+/* Tarjetas */
+.episode-card,
+.series-card,
+.continue-card {
+  background-color: var(--color-card);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.episode-card:hover,
+.series-card:hover,
+.continue-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.episode-card img,
+.series-card img,
+.continue-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.episode-card h3,
+.series-card h3,
+.continue-card h3 {
+  padding: 0.7rem;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.continue-card p {
+  padding: 0 0.7rem 0.7rem;
+  color: var(--color-gray);
+  font-size: 0.85rem;
+}
+
+/* ==============================
+   PIE DE PÁGINA
+   ============================== */
+footer {
+  background-color: #141414;
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-gray);
+  font-size: 0.9rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+footer a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.social-media p {
+  margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 992px) {
+  header {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .user-actions {
+    margin-top: 0.5rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero {
+    height: 50vh;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .logo h1 {
+    font-size: 1.4rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .user-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .hero {
+    height: 45vh;
+    padding: 1.5rem;
+    background-position: center;
+  }
+
+  .hero-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  .episode-grid,
+  .series-grid,
+  .continue-list {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.7rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
