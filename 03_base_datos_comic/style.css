@@ -44,7 +44,7 @@ nav ul li a:hover {
 }
 
 .hero {
-  background: url('#') center/cover no-repeat;
+  background: url('escenario.jpeg') center/cover no-repeat;
   height: 400px;
   display: flex;
   align-items: center;
@@ -173,20 +173,40 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header {
-    flex-direction: column;
+    padding: 15px 30px;
+  }
+
+  nav ul {
     gap: 15px;
   }
 
-  .episode-grid,
-  .character-grid {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
+  .hero {
+    height: 350px;
   }
 
-  main {
-    padding: 20px;
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .episode-card,
+  .character-card {
+    width: 180px;
+  }
+}
+
+/* 📱 Móviles grandes (<=768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 20px;
   }
 
   .hero {
@@ -197,7 +217,94 @@ footer {
     font-size: 1.8rem;
   }
 
+  .hero-content p {
+    font-size: 1rem;
+  }
+
   .hero-content button {
     padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  /* 🔽 En móviles las cards se apilan verticalmente */
+  .episode-grid,
+  .character-grid {
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .episode-card,
+  .character-card {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  footer {
+    padding: 30px 10px;
+  }
+
+  .footer-links ul,
+  .social-media ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* 📱 Móviles pequeños (<=480px) */
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 12px;
+  }
+
+  .hero {
+    height: 250px;
+    padding: 0 10px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-content button {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .episode-card,
+  .character-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .episode-card img,
+  .character-card img {
+    height: 160px;
+  }
+
+  .section-latest h2,
+  .section-characters h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
   }
 }
