@@ -3,8 +3,8 @@ let comic = {
   "numeroEpisodios": "Metro City",
   "genero": "Fantasia, drama",
   "sinopsis": "Un joven de 17 años decide ir a un museo abandonado donde encontrar un peculiar mentor del pasado",
-  "autores": {"Santiago", "Salome", "Luis"} ,
-  "portadaComic":
+  "autores": ["Santiago", "Salome", "Luis"] ,
+  "portadaComic":".img/portada.jpg",
   "year": 2025,
   "capitulos": [
     {
