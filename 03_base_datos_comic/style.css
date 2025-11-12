@@ -1,12 +1,3 @@
-:root {
-  --color-bg: #0f0f0f;
-  --color-card: #1a1a1a;
-  --color-accent: #f47521;
-  --color-text: #ffffff;
-  --color-gray: #b3b3b3;
-  --font-main: 'Poppins', sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -14,291 +5,199 @@
 }
 
 body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-main);
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
   line-height: 1.5;
 }
 
 header {
-  background-color: #141414;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 20px 40px;
+  background-color: #141414;
+  border-bottom: 2px solid #f47521;
 }
 
-header .logo h1 {
-  color: var(--color-accent);
+.logo h1 {
   font-size: 1.8rem;
-  letter-spacing: 1px;
+  color: #f47521;
+  letter-spacing: 2px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 25px;
 }
 
-nav a {
-  color: var(--color-text);
+nav ul li a {
+  color: #fff;
   text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.2s;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: var(--color-accent);
+nav ul li a:hover {
+  color: #f47521;
 }
-
-
-.user-actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.search-bar input {
-  background-color: #222;
-  border: none;
-  border-radius: 4px;
-  padding: 0.4rem 0.7rem;
-  color: var(--color-text);
-}
-
-.user-actions a {
-  color: var(--color-accent);
-  text-decoration: none;
-  font-weight: 600;
-}
-
 
 .hero {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
-              url("https://images7.alphacoders.com/132/1328232.png") center/cover;
-  height: 60vh;
+  background: url('#') center/cover no-repeat;
+  height: 400px;
   display: flex;
-  align-items: flex-end;
-  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hero-content {
-  max-width: 600px;
+  position: relative;
+  z-index: 1;
 }
 
-.hero h2 {
-  font-size: 2rem;
-  color: var(--color-text);
-}
-
-.hero p {
-  color: var(--color-gray);
-  margin: 0.5rem 0 1.5rem;
-}
-
-.hero button {
-  background-color: var(--color-accent);
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
+.hero-content h2 {
+  font-size: 2.5rem;
   color: #fff;
-  transition: background-color 0.3s;
 }
 
-.hero button:hover {
-  background-color: #ff8730;
+.hero-content p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.hero-content button {
+  margin-top: 20px;
+  background-color: #f47521;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  background-color: #ff6f00;
 }
 
 
 main {
-  padding: 2rem;
+  padding: 40px;
 }
 
-section {
-  margin-bottom: 2.5rem;
-}
 
-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--color-text);
+.section-latest h2,
+.section-characters h2 {
+  color: #f47521;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
 }
-
 
 .episode-grid,
-.series-grid,
-.continue-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 1rem;
+.character-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
-
 .episode-card,
-.series-card,
-.continue-card {
-  background-color: var(--color-card);
-  border-radius: 6px;
+.character-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
+  flex: 0 0 auto;
+  width: 220px;
+  transition: transform 0.3s;
 }
 
 .episode-card:hover,
-.series-card:hover,
-.continue-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+.character-card:hover {
+  transform: scale(1.05);
 }
 
 .episode-card img,
-.series-card img,
-.continue-card img {
+.character-card img {
   width: 100%;
-  height: 220px;
+  height: 150px;
   object-fit: cover;
 }
 
 .episode-card h3,
-.series-card h3,
-.continue-card h3 {
-  padding: 0.7rem;
-  font-size: 0.95rem;
-  color: var(--color-text);
-}
-
-.continue-card p {
-  padding: 0 0.7rem 0.7rem;
-  color: var(--color-gray);
-  font-size: 0.85rem;
+.character-card h3 {
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
 }
 
 
 footer {
   background-color: #141414;
-  padding: 2rem;
+  padding: 40px;
   text-align: center;
-  color: var(--color-gray);
-  font-size: 0.9rem;
+  border-top: 2px solid #f47521;
 }
 
-footer ul {
+.footer-links ul,
+.social-media ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 20px;
 }
 
-footer a {
-  color: var(--color-accent);
+.footer-links a,
+.social-media a {
+  color: #fff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
-
-.social-media p {
-  margin-bottom: 0.5rem;
-}
-
-
-@media (max-width: 992px) {
-  header {
-    flex-wrap: wrap;
-    padding: 1rem;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
-  }
-
-  .user-actions {
-    margin-top: 0.5rem;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .hero {
-    height: 50vh;
-    padding: 2rem 1rem;
-  }
-
-  .hero-content h2 {
-    font-size: 1.6rem;
-  }
-
-  main {
-    padding: 1.5rem;
-  }
+.footer-links a:hover,
+.social-media a:hover {
+  color: #f47521;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  header .logo h1 {
-    font-size: 1.4rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .user-actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    width: 100%;
-  }
-
-  .hero {
-    height: 45vh;
-    padding: 1.5rem;
-    background-position: center;
-  }
-
-  .hero-content h2 {
-    font-size: 1.3rem;
-  }
-
-  .hero button {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-  }
-
-  section h2 {
-    font-size: 1.2rem;
+    gap: 15px;
   }
 
   .episode-grid,
-  .series-grid,
-  .continue-list {
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    gap: 0.7rem;
+  .character-grid {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
   }
 
-  footer {
-    font-size: 0.8rem;
+  main {
+    padding: 20px;
   }
 
-  footer ul {
-    flex-direction: column;
-    align-items: center;
+  .hero {
+    height: 300px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content button {
+    padding: 10px 18px;
   }
 }
