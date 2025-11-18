@@ -2,7 +2,7 @@ const infoComic = document.querySelector(".info-comic")
 
 console.log(infoComic)
 
-info.innerHTML = `
+infoComic.innerHTML = `
 
 <small>${comic.year}</small>
 <h3>${comic.nombreComic}</h3>
@@ -13,5 +13,9 @@ info.innerHTML = `
 console.log(comic.Personajes)
 
 comic.Personajes.forEach(char => {
-
+    const div = document.createElement("div")
+    div.classList.add("personaje")
+    
+    console.log(char.nombre)
+    document.body.innerHTML += `<img src="${char.imagen}" width="200">`
 });

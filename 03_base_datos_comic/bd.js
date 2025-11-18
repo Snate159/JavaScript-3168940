@@ -6,6 +6,33 @@ let comic = {
   "autores": ["Santiago", "Salome", "Luis"] ,
   "portadaComic":".img/portada.jpg",
   "year": 2025,
+  "Personajes": [
+    {
+      "Nombre": "Raizura",
+      "Descripcion": "",
+      "Imagen": "./img/raizura.jpeg"
+    },
+    {
+      "Nombre": "Fruko",
+      "Descripcion": "",
+      "Imagen": "./img/perfil.jpg"
+    },
+    {
+      "Nombre": "Abuela",
+      "Descripcion": "",
+      "Imagen": "./img/perfil.jpg"
+    },
+    {
+      "Nombre": "Reportero",
+      "Descripcion": "",
+      "Imagen": "./img/perfil.jpg"
+    },
+    {
+      "Nombre": "Constructores",
+      "Descripcion": "",
+      "Imagen": "./img/perfil.jpg"
+    },
+  ],
   "capitulos": [
     {
       "id": 1,
