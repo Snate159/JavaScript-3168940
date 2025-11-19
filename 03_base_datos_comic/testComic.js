@@ -1,4 +1,5 @@
 const infoComic = document.querySelector(".info-comic")
+const cardPersonajes = document.querySelector(".card-personajes")
 
 console.log(infoComic)
 
@@ -15,7 +16,15 @@ console.log(comic.Personajes)
 comic.Personajes.forEach(char => {
     const div = document.createElement("div")
     div.classList.add("personaje")
+    div.innerHTML = `
+        <img src="${char.imagen}" alt="">
+        <p>${char.nombre}</p>
+        <p>${char.descripcion}</p>
+    `
     
-    console.log(char.nombre)
-    document.body.innerHTML += `<img src="${char.imagen}" width="200">`
+    cardPersonajes.appendChild(div)
 });
+
+
+
+
