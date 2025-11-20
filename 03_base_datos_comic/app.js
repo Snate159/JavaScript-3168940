@@ -1,17 +1,24 @@
-const infoComic = document.querySelector(".info-comic")
+const heroContent = document.querySelector(".hero-content")
+const characterGrid = document.querySelector(".character-grid")
 
-console.log(infoComic)
+console.log(heroContent)
 
-info.innerHTML = `
+heroContent.innerHTML = `
 
-<small>${comic.year}</small>
-<h3>${comic.nombreComic}</h3>
-<a>${comic.verAhora}</a>
-<p>${comic.sipnosis}</p>
-<p>Género:${comic.genero}</p>
+<h2>${comic.nombreComic}</h2>
+      <p>${comic.sinopsis}</p>
+      <button>Ver ahora</button>
 `
-console.log(comic.Personajes)
+console.log(comic.personajes)
 
-comic.Personajes.forEach(char => {
-
+comic.personajes.forEach(char => {
+const article = document.createElement("article")
+    article.classList.add("personajes")
+    article.innerHTML = `
+        <img src="${char.imagen}" alt="">
+        <p>${char.nombre}</p>
+        <p>${char.descripcion}</p>
+    `
+    
+    characterGrid.appendChild(article)
 });

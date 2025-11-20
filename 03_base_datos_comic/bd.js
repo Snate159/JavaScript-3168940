@@ -6,31 +6,31 @@ let comic = {
   "autores": ["Santiago", "Salome", "Luis"] ,
   "portadaComic":".img/portada.jpg",
   "year": 2025,
-  "Personajes": [
+  "personajes": [
     {
-      "Nombre": "Raizura",
-      "Descripcion": "",
-      "Imagen": "./img/raizura.jpeg"
+      "nombre": "Raizura",
+      "descripcion": "Joven de 17 años amante a la musica",
+      "imagen": "./raizura.jpeg"
     },
     {
-      "Nombre": "Fruko",
-      "Descripcion": "",
-      "Imagen": "./img/perfil.jpg"
+      "nombre": "Fruko",
+      "descripcion": "Un fantasma del pasado que que mantiene la salsa viva",
+      "imagen": "./fruko.jpeg"
     },
     {
-      "Nombre": "Abuela",
-      "Descripcion": "",
-      "Imagen": "./img/perfil.jpg"
+      "nombre": "Abuela",
+      "descripcion": "Guia materno del personaje pricipal",
+      "imagen": "./abuela.jpeg"
     },
     {
-      "Nombre": "Reportero",
-      "Descripcion": "",
-      "Imagen": "./img/perfil.jpg"
+      "nombre": "Reportero",
+      "descripcion": "Anunciante de las noticias",
+      "imagen": "./reportero.jpeg"
     },
     {
-      "Nombre": "Constructores",
-      "Descripcion": "",
-      "Imagen": "./img/perfil.jpg"
+      "nombre": "Constructores",
+      "descripcion": "Encargados de destruir el museo",
+      "imagen": "./trabajadores.jpeg"
     },
   ],
   "capitulos": [

@@ -11,11 +11,11 @@ infoComic.innerHTML = `
 <p>${comic.sipnosis}</p>
 <p>Género:${comic.genero}</p>
 `
-console.log(comic.Personajes)
+console.log(comic.personajes)
 
-comic.Personajes.forEach(char => {
+comic.personajes.forEach(char => {
     const div = document.createElement("div")
-    div.classList.add("personaje")
+    div.classList.add("personajes")
     div.innerHTML = `
         <img src="${char.imagen}" alt="">
         <p>${char.nombre}</p>
