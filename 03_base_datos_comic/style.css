@@ -128,7 +128,7 @@ main {
 }
 
 .episode-card img,
-.character-card img {
+.character-grid img {
   width: 100%;
   height: 150px;
   object-fit: cover;
