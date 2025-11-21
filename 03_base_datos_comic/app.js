@@ -1,5 +1,7 @@
 const heroContent = document.querySelector(".hero-content")
 const characterGrid = document.querySelector(".character-grid")
+const episodeGrid = document.querySelector(".episode-grid")
+
 
 console.log(heroContent)
 
@@ -8,17 +10,38 @@ heroContent.innerHTML = `
 <h2>${comic.nombreComic}</h2>
       <p>${comic.sinopsis}</p>
       <button>Ver ahora</button>
-`
-console.log(comic.personajes)
+` 
+
+
+characterGrid.innerHTML = '';
 
 comic.personajes.forEach(char => {
-const article = document.createElement("article")
-    article.classList.add("personajes")
-    article.innerHTML = `
+const div = document.createElement("div")
+    div.classList.add("character-card")
+    div.innerHTML = `
         <img src="${char.imagen}" alt="">
-        <p>${char.nombre}</p>
+        <h3>${char.nombre}</h3>
         <p>${char.descripcion}</p>
     `
     
-    characterGrid.appendChild(article)
+    characterGrid.appendChild(div)
 });
+
+episodeGrid.innerHTML = '';
+
+comic.capitulos.forEach(char => {
+    const div = document.createElement("div")
+    div.classList.add("episode-card")
+    div.innerHTML = `
+    <img src="${char.portada}" alt="">
+        <h3>${char.nombre}</h3>
+        <p>${char.descripcion}</p>
+    `
+
+    episodeGrid.appendChild(div)
+})
+
+console.log(comic.personajes)
+
+
+

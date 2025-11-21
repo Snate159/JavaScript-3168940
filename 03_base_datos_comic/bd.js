@@ -1,4 +1,4 @@
-let comic = {
+ let comic = {
   "nombreComic": "El eco Olvidado",
   "numeroEpisodios": "Metro City",
   "genero": "Fantasia, drama",
@@ -38,22 +38,22 @@ let comic = {
       "id": 1,
       "nombre": "Ua nota joven",
       "personajes": ["Raizura", "Abuela", "Reportero", "Constructores"],
-      "portada": ".img/portada.jpg",
+      "portada": "./raizura.jpeg",
       "descripcion": "Conocemos a raizura, un joven lleno de curiosidad y fascinacion por la musica decide investigar un museo de musica"
     },
     {
       "id": 2,
       "nombre": "El fantasma de la sabrosura",
       "personajes": ["Raizura", "Fruko"],
-      "portada": ".img/portada.jpg",
-      "Descripcion": "Raizura conoce a fruko, un fantasma que decide ayudarlo a revivir su musica",
+      "portada": "./fruko.jpeg",
+      "descripcion": "Raizura conoce a fruko, un fantasma que decide ayudarlo a revivir su musica",
     },
     {
       "id": 3,
       "nombre": "El primer y ultimo concierto",
       "personajes": ["Raizura", "Fruko", "Abuela", "Trabajadores", "Ciudadanos"],
-      "portada": ".img/portada.jpg",
-      "Descripcion": "Raizura decide hacer un concierto para evitar una tragedia",
+      "portada": "./escenario.jpeg",
+      "descripcion": "Raizura decide hacer un concierto para evitar una tragedia",
     }
   ]
 }
