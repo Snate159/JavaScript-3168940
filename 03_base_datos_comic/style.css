@@ -174,6 +174,11 @@ footer {
   color: #f47521;
 }
 
+.section-latest {
+  max-width: 1200px;
+  margin: auto;
+}
+
 
 @media (max-width: 1024px) {
   header {
@@ -323,4 +328,16 @@ footer {
   gap: 20px;
 }
 
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
 
+.section-characters {
+  max-width: 1200px;
+  margin: auto;
+}

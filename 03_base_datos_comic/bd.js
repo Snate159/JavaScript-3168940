@@ -2,7 +2,7 @@
   "nombreComic": "El eco Olvidado",
   "numeroEpisodios": "Metro City",
   "genero": "Fantasia, drama",
-  "sinopsis": "Un joven de 17 años decide ir a un museo abandonado donde encontrar un peculiar mentor del pasado",
+  "sinopsis": "Un joven de 17 años decide ir a un museo abandonado llevado por su curiosidad donde va a encontrar a un extraño maestro de la salsa del pasado",
   "autores": ["Santiago", "Salome", "Luis"] ,
   "portadaComic":".img/portada.jpg",
   "year": 2025,
