@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0e0e0e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ==================== */
+/* CONTENEDOR PRINCIPAL */
+/* ==================== */
+
+.page-wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+/* ==================== */
+/* PANEL IZQUIERDO (20%) */
+/* ==================== */
+
+.sidebar {
+    width: 20%;
+    background: #141414;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #ff7f27;
+}
+
+.panel-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff7f27;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #ff7f27;
+    text-transform: uppercase;
+}
+
+.related-champion-card {
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ff7f27;
+    display: flex;
+    justify-content: center;
+}
+
+.related-champion-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ==================== */
+/* CONTENIDO CENTRAL (60%) */
+/* ==================== */
+
+.main-content {
+    width: 60%;
+    padding: 20px;
+}
+
+.champion-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #ff7f27;
+    object-fit: cover;
+}
+
+.quote-block {
+    text-align: center;
+    background: #141414;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #ff7f27;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.quote-author {
+    margin-top: 10px;
+    color: #ff7f27;
+}
+
+.bio-section {
+    background: #141414;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #ff7f27;
+}
+
+.read-bio-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7f27;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.read-bio-button:hover {
+    background-color: #ff9a50;
+}
+
+/* ==================== */
+/* PANEL DERECHO (20%) */
+/* ==================== */
+
+.info-panel {
+    width: 20%;
+    background: #141414;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #ff7f27;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-block {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid #ff7f27;
+}
+
+.role-icon,
+.region-icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+/* ==================== */
+/* VIDEO DESTACADO */
+/* ==================== */
+
+.video-section {
+    width: 100%;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+.video-section-title {
+    text-align: center;
+    color: #ff7f27;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.video-container {
+    margin-top: 25px;
+    background: #141414;
+    border: 2px solid #ff7f27;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.video-card img {
+    width: 450px;
+    border-radius: 12px;
+}
+
+.video-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.video-info p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* ==================== */
+/* RESPONSIVE */
+/* ==================== */
+
+@media (max-width: 1100px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content,
+    .info-panel {
+        width: 100%;
+    }
+
+    .video-container {
+        flex-direction: column;
+    }
+
+    .video-card img {
+        width: 100%;
+    }
+}
