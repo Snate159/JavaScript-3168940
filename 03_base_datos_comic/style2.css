@@ -11,9 +11,7 @@ body {
     line-height: 1.6;
 }
 
-/* ==================== */
-/* CONTENEDOR PRINCIPAL */
-/* ==================== */
+
 
 .page-wrapper {
     width: 100%;
@@ -25,9 +23,6 @@ body {
     gap: 20px;
 }
 
-/* ==================== */
-/* PANEL IZQUIERDO (20%) */
-/* ==================== */
 
 .sidebar {
     width: 20%;
@@ -46,12 +41,7 @@ body {
     text-align: center;
 }
 
-.sub-title {
-    font-size: 14px;
-    margin-bottom: 12px;
-    color: #ff7f27;
-    text-transform: uppercase;
-}
+
 
 .related-champion-card {
     background: #1a1a1a;
@@ -70,9 +60,7 @@ body {
     object-fit: cover;
 }
 
-/* ==================== */
-/* CONTENIDO CENTRAL (60%) */
-/* ==================== */
+
 
 .main-content {
     width: 60%;
@@ -131,9 +119,7 @@ body {
     background-color: #ff9a50;
 }
 
-/* ==================== */
-/* PANEL DERECHO (20%) */
-/* ==================== */
+
 
 .info-panel {
     width: 20%;
@@ -154,16 +140,9 @@ body {
     border: 2px solid #ff7f27;
 }
 
-.role-icon,
-.region-icon {
-    width: 80px;
-    height: 80px;
-    margin-top: 10px;
-}
 
-/* ==================== */
-/* VIDEO DESTACADO */
-/* ==================== */
+
+
 
 .video-section {
     width: 100%;
@@ -187,26 +166,19 @@ body {
     padding: 20px;
     display: flex;
     gap: 20px;
+    justify-content: center;
+    
+    
 }
 
-.video-card img {
-    width: 450px;
+.video-card video {
+    width: 800px;
     border-radius: 12px;
 }
 
-.video-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
 
-.video-info p {
-    font-size: 16px;
-    opacity: 0.8;
-}
 
-/* ==================== */
-/* RESPONSIVE */
-/* ==================== */
+
 
 @media (max-width: 1100px) {
     .page-wrapper {

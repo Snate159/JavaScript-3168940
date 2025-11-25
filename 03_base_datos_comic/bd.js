@@ -1,6 +1,6 @@
  let comic = {
   "nombreComic": "El eco Olvidado",
-  "numeroEpisodios": "Metro City",
+  "numeroEpisodios": "3",
   "genero": "Fantasia, drama",
   "sinopsis": "Un joven de 17 años decide ir a un museo abandonado llevado por su curiosidad donde va a encontrar a un extraño maestro de la salsa del pasado",
   "autores": ["Santiago", "Salome", "Luis"] ,
