@@ -165,14 +165,16 @@ body {
     border-radius: 12px;
     padding: 20px;
     display: flex;
-    gap: 20px;
     justify-content: center;
-    
+    max-width: 900px;      /* Ajusta al tamaño del video + padding */
+    margin-left: auto;     /* Para centrar */
+    margin-right: auto;    /* Para centrar */
     
 }
 
 .video-card video {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;   /* Tamaño original del video */
     border-radius: 12px;
 }
 
