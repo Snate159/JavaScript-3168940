@@ -1,4 +1,4 @@
- let comic = {
+ export let comic = {
   "nombreComic": "El eco Olvidado",
   "numeroEpisodios": "3",
   "genero": "Fantasia, drama",
@@ -8,26 +8,31 @@
   "year": 2025,
   "personajes": [
     {
+      "id": 1,
       "nombre": "Raizura",
       "descripcion": "Joven de 17 años amante a la musica",
       "imagen": "./raizura.jpeg"
     },
     {
+      "id": 2,
       "nombre": "Fruko",
       "descripcion": "Un fantasma del pasado que que mantiene la salsa viva",
       "imagen": "./fruko.jpeg"
     },
     {
+      "id": 3,
       "nombre": "Abuela",
       "descripcion": "Guia materno del personaje pricipal",
       "imagen": "./abuela.jpeg"
     },
     {
+      "id": 4,
       "nombre": "Reportero",
       "descripcion": "Anunciante de las noticias",
       "imagen": "./reportero.jpeg"
     },
     {
+      "id": 5,
       "nombre": "Constructores",
       "descripcion": "Encargados de destruir el museo",
       "imagen": "./trabajadores.jpeg"
