@@ -6,4 +6,10 @@ import { comic } from "./bd";
 const params = new URLSearchParams(window.location.search)
 const id = parseInt( params.get("id"))
 
-console.log("El id del personaje es", id)
+
+const miPersonaje = comic.personajes.find (p => p.id === id )
+
+//console.log("El id del personaje es", miPersonaje)
+const contenidoPersonaje = document.querySelector(".contenido-personaje")
+
+console.log(contenidoPersonaje)
