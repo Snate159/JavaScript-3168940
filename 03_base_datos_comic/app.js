@@ -20,6 +20,7 @@ comic.personajes.forEach(char => {
 const div = document.createElement("div")
     div.classList.add("character-card")
     div.innerHTML = `
+        <a href="./index2.html?id=${char.id}">
         <img src="${char.imagen}" alt="">
         <h3>${char.nombre}</h3>
         <p>${char.descripcion}</p>
