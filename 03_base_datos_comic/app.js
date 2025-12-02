@@ -1,4 +1,4 @@
-import { comic } from "./bd "
+import { comic } from "./bd.js "
 const heroContent = document.querySelector(".hero-content")
 const characterGrid = document.querySelector(".character-grid")
 const episodeGrid = document.querySelector(".episode-grid")

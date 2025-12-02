@@ -10,6 +10,93 @@ const id = parseInt( params.get("id"))
 const miPersonaje = comic.personajes.find (p => p.id === id )
 
 //console.log("El id del personaje es", miPersonaje)
-const contenidoPersonaje = document.querySelector(".contenido-personaje")
+const padrePersonajes = document.querySelector(".padrePersonajes")
+
+padrePersonajes.innerHTML = `
+
+<div class="page-wrapper">
+
+        <!-- ===== PANEL IZQUIERDO ===== -->
+        <aside class="sidebar">
+
+            <div class="panel-title">Personajes Relacionados</div>
+
+            <div class="related-champions">
+                <div class="related-champion-card">
+                    <img src="fruko.jpeg" alt="Fruko">
+                </div>
+
+                <div class="related-champion-card">
+                    <img src="abuela.jpeg" alt="Abuela">
+                </div>
+
+                <div class="related-champion-card">
+                    <img src="trabajadores.jpeg" alt="Ciudadanos">
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- ===== CONTENIDO CENTRAL ===== -->
+        <main class="main-content">
+
+
+            <div class="champion-header">
+                <img class="profile-image" src="raizura.jpeg" alt="Raizura">
+            </div>
+
+     
+            <div class="quote-block">
+                <p>"Pasame la aguapanela".</p>
+                <p class="quote-author">~ Raizura</p>
+            </div>
+
+    
+            <section class="bio-section">
+                <p class="bio-paragraph">
+                    ${miPersonaje.biografia}
+                </p>
+
+                <button class="read-bio-button">Leer biografía →</button>
+            </section>
+
+        </main>
+
+        <!-- ===== PANEL DERECHO ===== -->
+        <aside class="info-panel">
+
+            <div class="info-block">
+                <p class="panel-title">17 años</p>
+            </div>
+
+            <div class="info-block">
+                <p class="panel-title">1,70 cm</p>
+            </div>
+
+            <div class="info-block">
+                <p class="panel-title">Musico En Formacion</p>
+            </div>
+
+        </aside>
+
+    </div>
+    <!-- ===== SECCIÓN DEL VIDEO ===== -->
+    <section class="video-section">
+
+        <div class="divider"></div>
+        <p class="video-section-title">Video Destacado</p>
+        <div class="divider"></div>
+
+        <div class="video-container">
+
+            <div class="video-card">
+                <video src="raizuraa.mp4" controls></video>
+            </div>
+
+        
+        </div>
+
+    </section>
+` 
 
 console.log(contenidoPersonaje)
