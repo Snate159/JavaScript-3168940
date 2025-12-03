@@ -35,6 +35,7 @@ comic.capitulos.forEach(char => {
     const div = document.createElement("div")
     div.classList.add("episode-card")
     div.innerHTML = `
+    <a href="./index3.html?id=${char.id}">
     <img src="${char.portada}" alt="">
         <h3>${char.nombre}</h3>
         <p>${char.descripcion}</p>

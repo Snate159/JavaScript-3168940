@@ -1,7 +1,7 @@
 
 //"configuracion ESmodules 2611"
 
-import { comic } from "./bd";
+import { comic } from "./bd.js";
 
 const params = new URLSearchParams(window.location.search)
 const id = parseInt( params.get("id"))
@@ -70,7 +70,7 @@ padrePersonajes.innerHTML = `
             </div>
 
             <div class="info-block">
-                <p class="panel-title">${miPersonaje.esatura}</p>
+                <p class="panel-title">${miPersonaje.estatura}</p>
             </div>
 
             <div class="info-block">
