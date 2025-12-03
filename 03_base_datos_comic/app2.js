@@ -42,13 +42,13 @@ padrePersonajes.innerHTML = `
 
 
             <div class="champion-header">
-                <img class="profile-image" src="raizura.jpeg" alt="Raizura">
+                <img class="profile-image" src="${miPersonaje.imagen}" alt="Raizura">
             </div>
 
      
             <div class="quote-block">
-                <p>"Pasame la aguapanela".</p>
-                <p class="quote-author">~ Raizura</p>
+                <p>"${miPersonaje.frase}".</p>
+                <p class="quote-author">~ ${miPersonaje.nombre}</p>
             </div>
 
     
@@ -66,15 +66,15 @@ padrePersonajes.innerHTML = `
         <aside class="info-panel">
 
             <div class="info-block">
-                <p class="panel-title">17 años</p>
+                <p class="panel-title">${miPersonaje.años}</p>
             </div>
 
             <div class="info-block">
-                <p class="panel-title">1,70 cm</p>
+                <p class="panel-title">${miPersonaje.esatura}</p>
             </div>
 
             <div class="info-block">
-                <p class="panel-title">Musico En Formacion</p>
+                <p class="panel-title">${miPersonaje.rol}</p>
             </div>
 
         </aside>
@@ -90,7 +90,7 @@ padrePersonajes.innerHTML = `
         <div class="video-container">
 
             <div class="video-card">
-                <video src="raizuraa.mp4" controls></video>
+                <video src="${miPersonaje.video}" controls></video>
             </div>
 
         
