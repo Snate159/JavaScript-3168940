@@ -31,18 +31,13 @@ chapterwrapper.innerHTML = `
 
         <!-- GALERÍA -->
         <div class="characters-gallery">
+        ${miCapitulo.personajes.map( (char) => {
+            return `
             <div class="character-card">
-                <img src="raizura.jpeg" alt="raizura">
+                <img src="${char.imagen}" alt="raizura">
             </div>
-            <div class="character-card">
-                <img src="abuela.jpeg" alt="abuela">
-            </div>
-            <div class="character-card">
-                <img src="reportero.jpeg" alt="reportero">
-            </div>
-            <div class="character-card">
-                <img src="trabajadores.jpeg" alt="trabajadores">
-            </div>
+            `
+        })}
         </div>
 
         <section class="video-section">

@@ -11,6 +11,47 @@ body {
     line-height: 1.6;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #141414;
+  border-bottom: 2px solid #f47521;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: #f47521;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+
+nav ul li a:hover {
+  color: #f47521;
+}
 
 
 .page-wrapper {

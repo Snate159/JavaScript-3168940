@@ -52,6 +52,17 @@ nav ul li a:hover {
   justify-content: center;
   text-align: center;
   position: relative;
+  background-size: cover;
+  background-position: center;
+
+  animation: cambiarFondo 12s infinite; /* 3 imágenes → 12s, cada una 4s */
+}
+
+@keyframes cambiarFondo {
+  0%   { background-image: url('trabajadores.jpeg'); }
+  33%  { background-image: url('reportero.jpeg'); }
+  66%  { background-image: url('abuela.jpeg'); }
+  100% { background-image: url('fruko.jpeg'); }
 }
 
 .hero::after {
@@ -111,7 +122,16 @@ main {
   gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
+
 }
+
+.episode-grid a,
+.character-grid a {
+  color: inherit;       
+  text-decoration: none; 
+  cursor: default;       
+}
+
 
 .episode-card,
 .character-card {
