@@ -1,5 +1,5 @@
-* Centrar todo en la pantalla */
-/* Centrar todo en la pantalla */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -11,14 +11,14 @@ body {
     font-family: "Arial", sans-serif;
 }
 
-/* Contenedor centrado */
+
 .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Estilo del botón mejorado */
+
 .btn-raizura {
     padding: 18px 42px;
     font-size: 32px;
@@ -33,7 +33,7 @@ body {
     box-shadow: 0 6px 0 #ff7f00, 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Efecto hover */
+
 .btn-raizura:hover {
     background: #ff7f00;
     color: #000000;
@@ -42,7 +42,7 @@ body {
     box-shadow: 0 10px 0 #000000, 0 14px 22px rgba(0,0,0,0.3);
 }
 
-/* Efecto de click */
+
 .btn-raizura:active {
     transform: translateY(2px) scale(1.03);
     box-shadow: 0 4px 0 #000000;
