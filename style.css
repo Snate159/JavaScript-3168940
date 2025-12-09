@@ -1,3 +1,4 @@
+* Centrar todo en la pantalla */
 /* Centrar todo en la pantalla */
 body {
     margin: 0;
@@ -6,29 +7,43 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f3f3f3;
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    font-family: "Arial", sans-serif;
 }
 
 /* Contenedor centrado */
 .contenedor {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilo del botón */
+/* Estilo del botón mejorado */
 .btn-raizura {
-    padding: 12px 28px;
-    font-size: 22px;
-    color: orange;
-    border: 3px solid black;
+    padding: 18px 42px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff7f00;
+    border: 4px solid #000000;
     text-decoration: none;
-    border-radius: 8px;
-    font-family: Arial, sans-serif;
-    transition: 0.3s ease;
+    border-radius: 14px;
+    background: #000000;
+    transition: all 0.35s ease;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 0 #ff7f00, 0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* Efecto hover */
 .btn-raizura:hover {
-    background: black;
-    color: orange;
-    transform: scale(1.05);
+    background: #ff7f00;
+    color: #000000;
+    border-color: #000000;
+    transform: translateY(-4px) scale(1.06);
+    box-shadow: 0 10px 0 #000000, 0 14px 22px rgba(0,0,0,0.3);
+}
+
+/* Efecto de click */
+.btn-raizura:active {
+    transform: translateY(2px) scale(1.03);
+    box-shadow: 0 4px 0 #000000;
 }
