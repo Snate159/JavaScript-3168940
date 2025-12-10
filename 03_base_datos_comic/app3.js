@@ -8,7 +8,11 @@ const id = parseInt( params.get("id"))
 
 const miCapitulo = comic.capitulos.find (p => p.id === id )
 
-//console.log("El id del personaje es", miPersonaje)
+if (!id || !miCapitulo) {
+    window.location.href = "./index.html"; 
+}
+
+
 const chapterwrapper = document.querySelector(".chapter-wrapper")
 
 chapterwrapper.innerHTML = `

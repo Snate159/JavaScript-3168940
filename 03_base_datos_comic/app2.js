@@ -9,7 +9,11 @@ const id = parseInt( params.get("id"))
 
 const miPersonaje = comic.personajes.find (p => p.id === id )
 
-//console.log("El id del personaje es", miPersonaje)
+if (!id || !miPersonaje) {
+    window.location.href = "./index.html"; 
+}
+
+
 const padrePersonajes = document.querySelector(".padrePersonajes")
 
 padrePersonajes.innerHTML = `
